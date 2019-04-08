@@ -12,14 +12,10 @@ import com.template.mvvmtemplate.BuildConfig
  */
 object ErrorManagement {
 
-    private val TAG = "ErrorManagement"
-
-    fun logError(ex: Throwable) {
-        logError(null, ex, true)
-    }
+    private const val TAG = "ErrorManagement"
 
     @JvmOverloads
-    fun logError(context: Context?, ex: Throwable, showMessage: Boolean = true) {
+    fun logError(context: Context? = null, ex: Throwable, showMessage: Boolean = true) {
         Log.e(TAG, "logError: ", ex)
 
         try {
