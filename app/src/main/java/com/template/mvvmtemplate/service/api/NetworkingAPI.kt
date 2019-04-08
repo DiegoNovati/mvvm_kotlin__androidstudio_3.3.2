@@ -1,4 +1,4 @@
-package com.template.mvvmtemplate.service.api;
+package com.template.mvvmtemplate.service.api
 
 /**
  * Created by diegonovati on 18/04/2018.
@@ -8,5 +8,4 @@ package com.template.mvvmtemplate.service.api;
  * This interface contains the definition list of all the network endpoints used by the App.
  * Ref: Retrofit
  */
-public interface NetworkingAPI {
-}
+interface NetworkingAPI
