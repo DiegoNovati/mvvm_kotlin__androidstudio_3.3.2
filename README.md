@@ -1,4 +1,4 @@
-# mvvm_androidstudio_3.3.2
+# mvvm_kotlin_androidstudio_3.3.2
 MVVM Template architecture to use with Android Studio 3.3.2, written in Kotlin
 
 This template supports API 15 and above and uses the following technologies:
