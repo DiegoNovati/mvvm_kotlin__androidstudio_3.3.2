@@ -1,9 +1,5 @@
 package com.template.mvvmtemplate.model
 
-/**
- * Created by diegonovati on 18/04/2018.
- */
-
 import android.content.Context
 
 /**

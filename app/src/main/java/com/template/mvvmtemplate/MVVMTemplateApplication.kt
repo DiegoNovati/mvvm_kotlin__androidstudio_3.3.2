@@ -9,10 +9,6 @@ import android.support.multidex.MultiDexApplication
 import com.template.mvvmtemplate.error.ErrorManagement
 import com.template.mvvmtemplate.module.DependencyInjector
 
-/**
- * Created by diegonovati on 18/04/2018.
- */
-
 class MVVMTemplateApplication : MultiDexApplication(), LifecycleObserver {
 
     override fun onCreate() {

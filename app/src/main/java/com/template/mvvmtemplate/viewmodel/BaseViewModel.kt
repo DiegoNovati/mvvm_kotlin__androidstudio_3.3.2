@@ -11,10 +11,6 @@ import com.template.mvvmtemplate.service.NetworkingService
 import javax.inject.Inject
 
 /**
- * Created by diegonovati on 18/04/2018.
- */
-
-/**
  * This viewmodel is the base class for all the viewmodels. It receive the injections of all the
  * classes defined to be injected in the 'module' package
  */

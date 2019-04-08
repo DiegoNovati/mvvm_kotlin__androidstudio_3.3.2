@@ -12,10 +12,6 @@ import com.template.mvvmtemplate.service.NetworkingService
 import javax.inject.Inject
 
 /**
- * Created by diegonovati on 18/04/2018.
- */
-
-/**
  * This activity is the base class for all the activies. It receive the injections of all the
  * classes defined to be injected in the 'module' package
  */
