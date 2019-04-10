@@ -15,7 +15,7 @@ object ErrorManagement {
     private const val TAG = "ErrorManagement"
 
     @JvmOverloads
-    fun logError(context: Context? = null, ex: Throwable, showMessage: Boolean = true) {
+    fun logError(ex: Throwable, context: Context? = null, showMessage: Boolean = true) {
         Log.e(TAG, "logError: ", ex)
 
         try {
@@ -27,6 +27,5 @@ object ErrorManagement {
         } catch (e: Exception) {
             Log.e(TAG, "******** logError: ", e)
         }
-
     }
 }

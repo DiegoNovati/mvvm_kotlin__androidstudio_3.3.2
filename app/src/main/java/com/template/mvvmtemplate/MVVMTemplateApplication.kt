@@ -50,6 +50,6 @@ class MVVMTemplateApplication : MultiDexApplication(), LifecycleObserver {
     }
 
     private fun logError(throwable: Throwable) {
-        ErrorManagement.logError(this, throwable)
+        ErrorManagement.logError(throwable)
     }
 }

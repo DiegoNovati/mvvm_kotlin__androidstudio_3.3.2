@@ -34,7 +34,7 @@ open class BaseViewModel(protected var context: Context) {
     }
 
     fun logError(throwable: Throwable) {
-        ErrorManagement.logError(context, throwable)
+        ErrorManagement.logError(throwable, context)
     }
 
     protected fun onInject(appComponent: AppComponent?) {

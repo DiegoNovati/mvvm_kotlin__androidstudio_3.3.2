@@ -36,7 +36,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     fun logError(throwable: Throwable) {
-        ErrorManagement.logError(this, throwable)
+        ErrorManagement.logError(throwable, this)
     }
 
     protected fun onInject(appComponent: AppComponent?) {

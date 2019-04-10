@@ -36,7 +36,7 @@ class BaseFragment : Fragment() {
     }
 
     fun logError(throwable: Throwable) {
-        ErrorManagement.logError(activity, throwable)
+        ErrorManagement.logError(throwable)
     }
 
     protected fun onInject(appComponent: AppComponent?) {
