@@ -58,7 +58,7 @@ class NetworkingModule {
         // production backend
         val url = context.getString(R.string.restBaseUrl)
         val networkingAPI = getRetrofit(url).create(NetworkingAPI::class.java)
-        return NetworkingService(context, networkingAPI, runtimeData)
+        return NetworkingService(networkingAPI)
     }
 
     private fun getRetrofit(baseUrl: String): Retrofit {

@@ -8,4 +8,4 @@ import com.template.mvvmtemplate.service.api.NetworkingAPI
 /**
  * This class implements the connections with the backend using Retrofit
  */
-class NetworkingService(private val context: Context, private val networkingAPI: NetworkingAPI, private val runtimeData: RuntimeData)
+class NetworkingService(private val networkingAPI: NetworkingAPI)

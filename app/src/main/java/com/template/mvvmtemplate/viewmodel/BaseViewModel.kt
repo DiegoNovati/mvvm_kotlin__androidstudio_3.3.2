@@ -1,6 +1,6 @@
 package com.template.mvvmtemplate.viewmodel
 
-import android.app.Activity
+import android.content.Context
 
 import com.template.mvvmtemplate.error.ErrorManagement
 import com.template.mvvmtemplate.model.RuntimeData
@@ -14,7 +14,7 @@ import javax.inject.Inject
  * This viewmodel is the base class for all the viewmodels. It receive the injections of all the
  * classes defined to be injected in the 'module' package
  */
-open class BaseViewModel(protected var activity: Activity) {
+open class BaseViewModel(protected var context: Context) {
 
     @Inject
     lateinit var runtimeData: RuntimeData
@@ -24,7 +24,7 @@ open class BaseViewModel(protected var activity: Activity) {
 
     init {
         try {
-            this.activity = activity
+            this.context = context
             // Here we will add the code to inject the dependencies
             onInject(DependencyInjector.appComponent)
         } catch (ex: Exception) {
@@ -34,7 +34,7 @@ open class BaseViewModel(protected var activity: Activity) {
     }
 
     fun logError(throwable: Throwable) {
-        ErrorManagement.logError(activity, throwable)
+        ErrorManagement.logError(context, throwable)
     }
 
     protected fun onInject(appComponent: AppComponent?) {

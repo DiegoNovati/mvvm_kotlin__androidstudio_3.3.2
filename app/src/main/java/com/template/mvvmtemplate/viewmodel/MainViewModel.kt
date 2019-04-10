@@ -1,5 +1,5 @@
 package com.template.mvvmtemplate.viewmodel
 
-import android.app.Activity
+import android.content.Context
 
-class MainViewModel(activity: Activity) : BaseViewModel(activity)
+class MainViewModel(context: Context) : BaseViewModel(context)
