@@ -53,7 +53,7 @@ class NetworkingModule {
 
     @Provides
     @Singleton
-    fun getNetworkingService(context: Context, runtimeData: RuntimeData): NetworkingService {
+    fun getNetworkingService(context: Context): NetworkingService {
         // Note: the base url is defined in the app build.gradle (so that we can have testing and
         // production backend
         val url = context.getString(R.string.restBaseUrl)
